@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream:hsl(30, 38%, 92%);
+    --light-cyan:hsl(159, 40%, 18%);
+
+    /* Neutral */
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White:hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;    
+    background-color: var(--Cream);
+    padding: 1.5rem 1rem;
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    width: 100dvw;
+}
+
+.image{
+    background-color: var(--White);
+}
+
+.image img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.desktop{
+    display:none;
+}
+
+.mobile{
+    display: block;
+}
+article{
+    padding: 1rem;
+    background-color: var(--White);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+article h4{
+    letter-spacing: 0.30rem;
+    font-size: .7rem;
+    font-weight:500;
+    color: var(--Dark-grayish-blue);
+}
+
+.heading{
+    font-family: "Fraunces", serif;
+    margin: .5rem 0;
+    font-size: 1.8rem;
+    color: var(--Very-dark-blue);
+}
+
+article .info{
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+article .cost{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: "Fraunces", serif; 
+    margin: 1.3rem 0;
+}
+
+.cost h1{
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: var(--Dark-cyan);
+}
+
+.cost del{
+    color: var(--Dark-grayish-blue);
+}
+
+.cart img{
+    width: 100%;
+}
+
+.cart div{
+    width: 15px;
+    margin-right: 0.5rem;
+}
+
+.cart{
+    color: var(--White);
+    font-weight:900;
+    width: 100%;
+    font-size: 15px;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.cart:hover{
+    cursor: pointer;
+    background-color: var(--light-cyan);
+}
+
+@media screen and (min-width:600px){
+
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        max-width:650px;
+        display: flex;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .image{
+        border-radius: 0.5rem;
+    }
+
+    .image img{
+        border-radius: 0.5rem  0 0 0.5rem;
+    }
+
+    article{
+        border-radius: 0 0.5rem 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+}
