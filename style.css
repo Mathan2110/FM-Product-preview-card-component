@@ -129,6 +129,7 @@ article .cost{
     main{
         max-width:650px;
         display: flex;
+        max-height: 800px;
     }
 
     .desktop{
